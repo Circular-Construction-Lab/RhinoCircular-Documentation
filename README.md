@@ -1,5 +1,15 @@
 # RhinoCircular Documentation
 
+### Jekyll Commands
+
+To install the dependencies, navigate to the theme directory and run `bundle install`.
+
+To test locally, `bundle exec jekyll serve`.
+
+To build for Github Pages, run `bundle exec jekyll build --destination docs/`.
+
+Also check the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll website.
+
 ## Install
 
 It' Jekyll god dammit:
