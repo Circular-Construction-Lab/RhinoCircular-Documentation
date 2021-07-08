@@ -14,12 +14,12 @@ This post will talk about setting up RhinoCircular.
 
 RhinoCircular is developed on:
 * Windows 10
-* Rhino 7
+* Rhino 6 or 7
 * Visual Studio 2019
 
 RhinoCircular is fully supported for:
 * Windows 10
-* Rhino 7 
+* Rhino 6 and 7 
 
 ### Install
 
