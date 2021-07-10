@@ -14,8 +14,8 @@ layout: null
 
 ## Running jekyll on your localhost:
 
-> `jekyll serve --watch`
+> `bundle exec jekyll serve`
 
 ## Building this documentation and upload to Github pages:
 
-> `jekyll build --destination docs/`
+> `bundle exec jekyll build --destination docs/`
