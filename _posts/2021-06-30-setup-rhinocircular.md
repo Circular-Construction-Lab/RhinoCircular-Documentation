@@ -44,7 +44,7 @@ Just follow this article: [How To: How and when to use CheckSum (MD5)](https://s
 There is a directory that Rhino and Grasshopper can see and load Grasshopper plug-ins.
 To find this directory, first open up Grasshopper from Rhino, then go to **Special Folders- Component Folder**.
 
-<img src="img/development-notes/gh_special_folders_comp_folder.png" alt="drawing" width="1200"/>
+<img src="img/development-notes/gh_special_folders_comp_folder.png" alt="drawing" width="700"/>
 
 A folder most likely located in **C:\Users\YOUR_USER_NAME\AppData\Roaming\Grasshopper\Libraries** will open. 
 This is the place where Grasshopper loads all its plug-ins.
