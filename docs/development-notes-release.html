@@ -1,0 +1,33 @@
+<h1 id="release">Release</h1>
+<h3 id="generate-md5-checksum">Generate MD5 Checksum</h3>
+<p>Adding MD5 checksum ensures clients receive binaries undamaged and untempered.
+Click <strong>Read More</strong>  to expand instructions.</p>
+
+<details>
+  <summary>Read More</summary>
+
+  <p>Original Article: <a href="https://support.esri.com/en/technical-article/000020408">How To: How and when to use CheckSum (MD5)</a></p>
+
+  <ol>
+    <li>
+      <p>Open Windows PowerShell from the Windows menu.
+<img src="https://s3-us-west-2.amazonaws.com/ist-app-support-files/000020408/00N39000003LL2C-0EMf2000000FWqG.png" alt="Image" /></p>
+    </li>
+    <li>
+      <p>Type command: <code>Get-FileHash</code>
+<img src="https://s3-us-west-2.amazonaws.com/ist-app-support-files/000020408/00N39000003LL2C-0EMf2000000FWu8.png" alt="Image" /></p>
+    </li>
+    <li>
+      <p>Drag and drop the file to be verified from the local directory into the PowerShell window. If the file is stored on a network drive, open the file directory either via a UNC path or a mapped letter drive in Windows File Explorer, then drag and drop the file into the PowerShell window as shown below. In this example, the ArcGIS Pro 2.3 executable file is used.
+<img src="https://s3-us-west-2.amazonaws.com/ist-app-support-files/000020408/00N39000003LL2C-0EMf2000000FWqV.png" alt="Image" /></p>
+    </li>
+    <li>After the filename, press the spacebar and enter -Algorithm MD5 to ensure the MD5 algorithm is used. An example of the final command is displayed below, where <filepath> is the full path of the file. In this example, the path is 'C:\arcgis\ArcGISPro_23_167023.exe'.
+</filepath>      <blockquote>
+        <p>Get-FileHash <filepath> -Algorithm MD5</filepath></p>
+      </blockquote>
+    </li>
+    <li>Press Enter. The output is the checksum value using the MD5 algorithm.
+<img src="https://s3-us-west-2.amazonaws.com/ist-app-support-files/000020408/00N39000003LL2C-0EMf2000000FWuI.png" alt="Image" /></li>
+  </ol>
+
+</details>

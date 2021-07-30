@@ -18,6 +18,10 @@
   
     
   
+    
+  
+    
+  
   
   <li><h2>Notes</h2>
     <ul>
@@ -27,7 +31,11 @@
       
     
               
-        <li class='Notes'><a href='#/development-notes'>Developer Notes</a></li>
+        <li class='Notes'><a href='#/development-notes_visual_studio'>Developer Notes - Visual Studio</a></li>
+              
+        <li class='Notes'><a href='#/development-notes_jekyll'>Developer Notes - Jekyll</a></li>
+              
+        <li class='Notes'><a href='#/development-notes-release'>Developer Notes - Release</a></li>
       
     
     </ul>
@@ -67,7 +75,7 @@
 <section id='content'>
 
   <article class='USAGE'>
-    <a name='/setup-rhinocircular' href='#/setup-rhinocircular'><h2><code><b>USAGE</b> /usage</code> Setup RhinoCircular</h2></a>
+    <a name='/setup-rhinocircular' href='#/setup-rhinocircular'><h2><code><b>USAGE</b> /setup</code> Setup RhinoCircular</h2></a>
     <section class='body'>
       <p>This post will talk about setting up RhinoCircular.</p>
 
@@ -121,7 +129,7 @@ Re-open Grasshopper, and you should be all set.</p>
   </article>
 
   <article class='ABOUT'>
-    <a name='/about' href='#/about'><h2><code><b>ABOUT</b> /dev_notes</code> About RhinoCircular</h2></a>
+    <a name='/about' href='#/about'><h2><code><b>ABOUT</b> /about_rc</code> About RhinoCircular</h2></a>
     <section class='body'>
       <h3 id="what-is-rhinocircular">What is RhinoCircular?</h3>
 <p>A plugin for Rhino/Grasshopper parametric CAD software allowing interaction with Madaster’s material circularity tools.</p>
@@ -146,11 +154,36 @@ Re-open Grasshopper, and you should be all set.</p>
   </article>
 
   <article class='Notes'>
-    <a name='/development-notes' href='#/development-notes'><h2><code><b>Notes</b> /dev_notes</code> Developer Notes</h2></a>
+    <a name='/development-notes_visual_studio' href='#/development-notes_visual_studio'><h2><code><b>Notes</b> /dev_notes_vs</code> Developer Notes - Visual Studio</h2></a>
     <section class='body'>
-      <p>This portion is some notes and quick solutions that occurred during development and worthwhile to jog down.</p>
+      <h1 id="visual-studio">Visual Studio</h1>
+<h3 id="setting-up-vscode-for-grasshopper-plug-in-deployment">Setting up VSCode for Grasshopper Plug-In Deployment</h3>
 
-<h1 id="jekyll">Jekyll</h1>
+<ul>
+  <li>I wrote a writeup for this. It is here: <a href="https://i.hongjunwu.com/Automate-Rhino-Plugin-Development">Automate Rhino Plugin Deployment</a></li>
+</ul>
+
+<h3 id="let-visual-studio-build-gha-instead-of-dll">Let Visual Studio Build .gha Instead of .dll</h3>
+
+<ul>
+  <li>In its Vanilla state, Visual Studio will build the plug-in in <code>.dll</code> by default, but it is not the appropriate format (<code>.gha</code>) for Rhino to read and load it.</li>
+  <li>To solve this problem, add the following line into <code>CircularConstruction.csproj</code>:</li>
+</ul>
+
+<pre><code class="language-cs">&lt;PropertyGroup&gt;
+    ...
+    &lt;TargetExt&gt;.gha&lt;/TargetExt&gt;
+    ...
+&lt;/PropertyGroup&gt;
+</code></pre>
+
+    </section>
+  </article>
+
+  <article class='Notes'>
+    <a name='/development-notes_jekyll' href='#/development-notes_jekyll'><h2><code><b>Notes</b> /dev_notes_jekyll</code> Developer Notes - Jekyll</h2></a>
+    <section class='body'>
+      <h1 id="jekyll">Jekyll</h1>
 <h3 id="documentation-for-this-websites-template">Documentation for this website’s template:</h3>
 <blockquote>
   <p><a href="https://github.com/Wiredcraft/carte">Carte Documentation</a></p>
@@ -179,28 +212,18 @@ Run `bundle install` to install missing gems.
 
 <p>Then simply run: <code>bundle install</code></p>
 
-<h1 id="visual-studio">Visual Studio</h1>
-<h3 id="setting-up-vscode-for-grasshopper-plug-in-deployment">Setting up VSCode for Grasshopper Plug-In Deployment</h3>
+<h3 id="controlling-the-order-of-sections">Controlling the order of sections</h3>
+<p>Currently, it is a dirty trick, but it works. I cannot get jekyll to work with a single number, so I am using date.
+In <strong>_posts</strong>, the date with most recent pops up to the top. For example, <strong>2021_06_30</strong> appears on the top of <strong>2021_06_01</strong>.
+It ain’t perfect, but it solves our problem.</p>
 
-<ul>
-  <li>I wrote a writeup for this. It is here: <a href="https://i.hongjunwu.com/Automate-Rhino-Plugin-Development">Automate Rhino Plugin Deployment</a></li>
-</ul>
+    </section>
+  </article>
 
-<h3 id="let-visual-studio-build-gha-instead-of-dll">Let Visual Studio Build .gha Instead of .dll</h3>
-
-<ul>
-  <li>In its Vanilla state, Visual Studio will build the plug-in in <code>.dll</code> by default, but it is not the appropriate format (<code>.gha</code>) for Rhino to read and load it.</li>
-  <li>To solve this problem, add the following line into <code>CircularConstruction.csproj</code>:</li>
-</ul>
-
-<pre><code class="language-cs">&lt;PropertyGroup&gt;
-    ...
-    &lt;TargetExt&gt;.gha&lt;/TargetExt&gt;
-    ...
-&lt;/PropertyGroup&gt;
-</code></pre>
-
-<h1 id="release">Release</h1>
+  <article class='Notes'>
+    <a name='/development-notes-release' href='#/development-notes-release'><h2><code><b>Notes</b> /dev_notes_release</code> Developer Notes - Release</h2></a>
+    <section class='body'>
+      <h1 id="release">Release</h1>
 <h3 id="generate-md5-checksum">Generate MD5 Checksum</h3>
 <p>Adding MD5 checksum ensures clients receive binaries undamaged and untempered.
 Click <strong>Read More</strong>  to expand instructions.</p>

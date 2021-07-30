@@ -2,7 +2,7 @@
 
 category: Usage
 type: 'USAGE'
-url_path: '/usage'
+url_path: '/setup'
 title: 'Setup RhinoCircular'
 
 layout: null

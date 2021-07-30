@@ -1,0 +1,20 @@
+<h1 id="visual-studio">Visual Studio</h1>
+<h3 id="setting-up-vscode-for-grasshopper-plug-in-deployment">Setting up VSCode for Grasshopper Plug-In Deployment</h3>
+
+<ul>
+  <li>I wrote a writeup for this. It is here: <a href="https://i.hongjunwu.com/Automate-Rhino-Plugin-Development">Automate Rhino Plugin Deployment</a></li>
+</ul>
+
+<h3 id="let-visual-studio-build-gha-instead-of-dll">Let Visual Studio Build .gha Instead of .dll</h3>
+
+<ul>
+  <li>In its Vanilla state, Visual Studio will build the plug-in in <code>.dll</code> by default, but it is not the appropriate format (<code>.gha</code>) for Rhino to read and load it.</li>
+  <li>To solve this problem, add the following line into <code>CircularConstruction.csproj</code>:</li>
+</ul>
+
+<pre><code class="language-cs">&lt;PropertyGroup&gt;
+    ...
+    &lt;TargetExt&gt;.gha&lt;/TargetExt&gt;
+    ...
+&lt;/PropertyGroup&gt;
+</code></pre>

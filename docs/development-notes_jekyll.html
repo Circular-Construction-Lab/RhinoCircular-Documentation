@@ -1,0 +1,33 @@
+<h1 id="jekyll">Jekyll</h1>
+<h3 id="documentation-for-this-websites-template">Documentation for this website’s template:</h3>
+<blockquote>
+  <p><a href="https://github.com/Wiredcraft/carte">Carte Documentation</a></p>
+</blockquote>
+
+<h3 id="running-jekyll-on-your-localhost">Running jekyll on your localhost:</h3>
+
+<blockquote>
+  <p><code>bundle exec jekyll serve</code></p>
+</blockquote>
+
+<h3 id="building-this-documentation-and-upload-to-github-pages">Building this documentation and upload to Github pages:</h3>
+
+<blockquote>
+  <p><code>bundle exec jekyll build --destination docs/</code></p>
+</blockquote>
+
+<h3 id="updating-gem-files">Updating Gem Files</h3>
+<p>Gem files in Jekyll are similar to Python packages, sometimes there are security issues that needs to be updated.
+For example, recently I had to update addressable from 2.7.0 to 2.8.0 in order to avoid security issues.
+If Ruby starts to complain about this:</p>
+
+<pre><code>Could not find addressable-2.8.0 in any of the sources
+Run `bundle install` to install missing gems.
+</code></pre>
+
+<p>Then simply run: <code>bundle install</code></p>
+
+<h3 id="controlling-the-order-of-sections">Controlling the order of sections</h3>
+<p>Currently, it is a dirty trick, but it works. I cannot get jekyll to work with a single number, so I am using date.
+In <strong>_posts</strong>, the date with most recent pops up to the top. For example, <strong>2021_06_30</strong> appears on the top of <strong>2021_06_01</strong>.
+It ain’t perfect, but it solves our problem.</p>
