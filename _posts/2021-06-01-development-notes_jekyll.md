@@ -3,7 +3,7 @@
 category: Notes
 type: 'Notes'
 url_path: '/dev_notes_jekyll'
-title: 'Developer Notes - Jekyll'
+title: 'Dev Notes - Jekyll'
 
 layout: null
 ---

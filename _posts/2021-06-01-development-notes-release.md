@@ -3,7 +3,7 @@
 category: Notes
 type: 'Notes'
 url_path: '/dev_notes_release'
-title: 'Developer Notes - Release'
+title: 'Dev Notes - Release'
 
 layout: null
 ---

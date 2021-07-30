@@ -3,7 +3,7 @@
 category: Notes
 type: 'Notes'
 url_path: '/dev_notes_vs'
-title: 'Developer Notes - Visual Studio'
+title: 'Dev Notes - Visual Studio'
 
 layout: null
 ---
