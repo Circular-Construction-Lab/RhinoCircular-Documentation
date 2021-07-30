@@ -44,6 +44,11 @@ This portion is some notes and quick solutions that occurred during development 
 # Release
 ### Generate MD5 Checksum
 Adding MD5 checksum ensures clients receive binaries undamaged and untempered.
+Click **Read More**  to expand instructions.
+
+{::options parse_block_html="true" /}
+<details>
+<summary markdown="span">Read More</summary>
 
 Original Article: [How To: How and when to use CheckSum (MD5)](https://support.esri.com/en/technical-article/000020408)
 
@@ -61,3 +66,6 @@ Original Article: [How To: How and when to use CheckSum (MD5)](https://support.e
 
 5. Press Enter. The output is the checksum value using the MD5 algorithm.
 ![Image](https://s3-us-west-2.amazonaws.com/ist-app-support-files/000020408/00N39000003LL2C-0EMf2000000FWuI.png)
+
+</details>
+{::options parse_block_html="false" /}
