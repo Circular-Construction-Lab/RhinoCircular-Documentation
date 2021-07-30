@@ -49,6 +49,6 @@ To find this directory, first open up Grasshopper from Rhino, then go to **Speci
 A folder most likely located in **C:\Users\YOUR_USER_NAME\AppData\Roaming\Grasshopper\Libraries** will open. 
 This is the place where Grasshopper loads all its plug-ins.
 
-With a peace of mind that your copy of RHinoCircular is original, we can proceed to install.
+With a peace of mind that your copy of RhinoCircular is original, we can proceed to install.
 Drag the **CircularConstruction.gha** into this directory and restart Rhino.
 Re-open Grasshopper, and you should be all set.
