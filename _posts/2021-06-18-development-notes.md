@@ -22,6 +22,17 @@ This portion is some notes and quick solutions that occurred during development 
 
 > `bundle exec jekyll build --destination docs/`
 
+### Updating Gem Files
+Gem files in Jekyll are similar to Python packages, sometimes there are security issues that needs to be updated.
+For example, recently I had to update addressable from 2.7.0 to 2.8.0 in order to avoid security issues.
+If Ruby starts to complain about this:
+
+```
+Could not find addressable-2.8.0 in any of the sources
+Run `bundle install` to install missing gems.
+```
+
+Then simply run: `bundle install`
 
 # Visual Studio
 ### Setting up VSCode for Grasshopper Plug-In Deployment
