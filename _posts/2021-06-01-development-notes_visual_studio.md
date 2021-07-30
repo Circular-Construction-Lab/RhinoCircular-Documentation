@@ -19,7 +19,11 @@ Older versions:
 
 ### Setting up VSCode for Grasshopper Plug-In Deployment
 
-* I wrote a writeup for this. It is here: [Automate Rhino Plugin Deployment](https://i.hongjunwu.com/Automate-Rhino-Plugin-Development)
+I wrote a writeup for this. It is here: [Automate Rhino Plugin Deployment](https://i.hongjunwu.com/Automate-Rhino-Plugin-Development)
+
+One who is new to the project should modify the **./CircularConstruction/CircularConstruction-REFERENCE.csproj** to one's own path in the post build events.
+Once that is done, rename this file to **CircularConstruction.csproj**. This file will get ignored by Git when committing, pushing, and pulling the repository.
+Therefore avoiding the problem of overwriting other people's workspace during collaboration.
 
 ### Let Visual Studio Build .gha Instead of .dll
 
