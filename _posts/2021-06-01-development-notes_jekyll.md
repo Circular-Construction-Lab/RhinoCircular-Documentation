@@ -8,7 +8,6 @@ title: 'Dev Notes - Jekyll'
 layout: null
 ---
 
-# Jekyll
 ### Documentation for this website's template:
 > [Carte Documentation](https://github.com/Wiredcraft/carte)
 
@@ -37,3 +36,9 @@ Then simply run: `bundle install`
 Currently, it is a dirty trick, but it works. I cannot get jekyll to work with a single number, so I am using date.
 In **_posts**, the date with most recent pops up to the top. For example, **2021_06_30** appears on the top of **2021_06_01**.
 It ain't perfect, but it solves our problem.
+
+| Prefix Date | --- | Purpose | 
+| --- | --- | --- | 
+| 2021-06-30 | --- | Setup Related | 
+| 2021-06-02 | --- | About Related | 
+| 2021-06-01 | --- | Development Notes |

@@ -22,6 +22,10 @@
   
     
   
+    
+  
+    
+  
   
   <li><h2>Notes</h2>
     <ul>
@@ -34,6 +38,8 @@
         <li class='Notes'><a href='#/development-notes_visual_studio'>Dev Notes - Visual Studio</a></li>
               
         <li class='Notes'><a href='#/development-notes_jekyll'>Dev Notes - Jekyll</a></li>
+              
+        <li class='Notes'><a href='#/development-notes_csharp'>Dev Notes - C#</a></li>
               
         <li class='Notes'><a href='#/development-notes-release'>Dev Notes - Release</a></li>
       
@@ -48,6 +54,8 @@
         <li class=''><a href='#'></a></li>
       
     
+              
+        <li class='ABOUT'><a href='#/people'>People</a></li>
               
         <li class='ABOUT'><a href='#/about'>About RhinoCircular</a></li>
       
@@ -129,6 +137,35 @@ Re-open Grasshopper, and you should be all set.</p>
   </article>
 
   <article class='ABOUT'>
+    <a name='/people' href='#/people'><h2><code><b>ABOUT</b> /people</code> People</h2></a>
+    <section class='body'>
+      <table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Position</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="http://ccl.aap.cornell.edu/team/felix-heisel/">Felix Heisel</a></td>
+      <td>Director</td>
+    </tr>
+    <tr>
+      <td><a href="http://ccl.aap.cornell.edu/team/vesela-petrova/">Vesela Petrova</a></td>
+      <td>Software Developer</td>
+    </tr>
+    <tr>
+      <td><a href="https://hongjunwu.com">Hongjun Wu</a></td>
+      <td>Software Developer</td>
+    </tr>
+  </tbody>
+</table>
+
+    </section>
+  </article>
+
+  <article class='ABOUT'>
     <a name='/about' href='#/about'><h2><code><b>ABOUT</b> /about_rc</code> About RhinoCircular</h2></a>
     <section class='body'>
       <h3 id="what-is-rhinocircular">What is RhinoCircular?</h3>
@@ -156,8 +193,7 @@ Re-open Grasshopper, and you should be all set.</p>
   <article class='Notes'>
     <a name='/development-notes_visual_studio' href='#/development-notes_visual_studio'><h2><code><b>Notes</b> /dev_notes_vs</code> Dev Notes - Visual Studio</h2></a>
     <section class='body'>
-      <h1 id="visual-studio">Visual Studio</h1>
-<h3 id="setting-up-vscode-for-grasshopper-plug-in-deployment">Setting up VSCode for Grasshopper Plug-In Deployment</h3>
+      <h3 id="setting-up-vscode-for-grasshopper-plug-in-deployment">Setting up VSCode for Grasshopper Plug-In Deployment</h3>
 
 <ul>
   <li>I wrote a writeup for this. It is here: <a href="https://i.hongjunwu.com/Automate-Rhino-Plugin-Development">Automate Rhino Plugin Deployment</a></li>
@@ -183,8 +219,7 @@ Re-open Grasshopper, and you should be all set.</p>
   <article class='Notes'>
     <a name='/development-notes_jekyll' href='#/development-notes_jekyll'><h2><code><b>Notes</b> /dev_notes_jekyll</code> Dev Notes - Jekyll</h2></a>
     <section class='body'>
-      <h1 id="jekyll">Jekyll</h1>
-<h3 id="documentation-for-this-websites-template">Documentation for this website’s template:</h3>
+      <h3 id="documentation-for-this-websites-template">Documentation for this website’s template:</h3>
 <blockquote>
   <p><a href="https://github.com/Wiredcraft/carte">Carte Documentation</a></p>
 </blockquote>
@@ -217,14 +252,48 @@ Run `bundle install` to install missing gems.
 In <strong>_posts</strong>, the date with most recent pops up to the top. For example, <strong>2021_06_30</strong> appears on the top of <strong>2021_06_01</strong>.
 It ain’t perfect, but it solves our problem.</p>
 
+<table>
+  <thead>
+    <tr>
+      <th>Prefix Date</th>
+      <th>—</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2021-06-30</td>
+      <td>—</td>
+      <td>Setup Related</td>
+    </tr>
+    <tr>
+      <td>2021-06-02</td>
+      <td>—</td>
+      <td>About Related</td>
+    </tr>
+    <tr>
+      <td>2021-06-01</td>
+      <td>—</td>
+      <td>Development Notes</td>
+    </tr>
+  </tbody>
+</table>
+
+    </section>
+  </article>
+
+  <article class='Notes'>
+    <a name='/development-notes_csharp' href='#/development-notes_csharp'><h2><code><b>Notes</b> /dev_notes_csharp</code> Dev Notes - C#</h2></a>
+    <section class='body'>
+      <h3 id="content-needed">Content needed.</h3>
+
     </section>
   </article>
 
   <article class='Notes'>
     <a name='/development-notes-release' href='#/development-notes-release'><h2><code><b>Notes</b> /dev_notes_release</code> Dev Notes - Release</h2></a>
     <section class='body'>
-      <h1 id="release">Release</h1>
-<h3 id="generate-md5-checksum">Generate MD5 Checksum</h3>
+      <h3 id="generate-md5-checksum">Generate MD5 Checksum</h3>
 <p>Adding MD5 checksum ensures clients receive binaries undamaged and untempered.
 Click <strong>Read More</strong>  to expand instructions.</p>
 

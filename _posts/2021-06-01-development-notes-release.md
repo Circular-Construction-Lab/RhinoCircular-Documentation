@@ -8,7 +8,6 @@ title: 'Dev Notes - Release'
 layout: null
 ---
 
-# Release
 ### Generate MD5 Checksum
 Adding MD5 checksum ensures clients receive binaries undamaged and untempered.
 Click **Read More**  to expand instructions.

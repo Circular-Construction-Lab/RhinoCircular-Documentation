@@ -8,7 +8,6 @@ title: 'Dev Notes - Visual Studio'
 layout: null
 ---
 
-# Visual Studio
 ### Setting up VSCode for Grasshopper Plug-In Deployment
 
 * I wrote a writeup for this. It is here: [Automate Rhino Plugin Deployment](https://i.hongjunwu.com/Automate-Rhino-Plugin-Development)
