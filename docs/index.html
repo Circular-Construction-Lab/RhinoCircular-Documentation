@@ -279,6 +279,18 @@ Run `bundle install` to install missing gems.
 
 <p>Then simply run: <code>bundle install</code></p>
 
+<h3 id="adding--changing-favicon">Adding &amp; Changing favicon</h3>
+<p>A favicon is the little icon that appears at the left side of the tab of the website.
+In order to change this icon in the future, modify the file under <strong>./img/favicon.png</strong>.</p>
+
+<p>Though already performed, it is worthwhile to mention the way to enable icons in jekyll is by adding the following to <strong>./_layouts/default.html</strong>:</p>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;head&gt;
+  &lt;link rel="shortcut icon" type="image/png" href="img/favicon.png"&gt;
+&lt;/head&gt;
+</code></pre>
+
 <h3 id="controlling-the-order-of-sections">Controlling the order of sections</h3>
 <p>Currently, it is a dirty trick, but it works. I cannot get jekyll to work with a single number, so I am using date.
 In <strong>_posts</strong>, the date with most recent pops up to the top. For example, <strong>2021_06_30</strong> appears on the top of <strong>2021_06_01</strong>.

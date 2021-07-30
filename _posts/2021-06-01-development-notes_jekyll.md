@@ -31,6 +31,18 @@ Run `bundle install` to install missing gems.
 
 Then simply run: `bundle install`
 
+### Adding & Changing favicon
+A favicon is the little icon that appears at the left side of the tab of the website.
+In order to change this icon in the future, modify the file under **./img/favicon.png**.
+
+Though already performed, it is worthwhile to mention the way to enable icons in jekyll is by adding the following to **./_layouts/default.html**:
+
+```html
+<!DOCTYPE html>
+<head>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+</head>
+```
 
 ### Controlling the order of sections
 Currently, it is a dirty trick, but it works. I cannot get jekyll to work with a single number, so I am using date.
